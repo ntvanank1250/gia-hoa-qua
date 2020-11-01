@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gia hoa qua</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Loại hoa quả:
+            </td>
+            <td><select id="loaihoaqua" onchange="tinh()">
+                    <option value="1">Ổi</option>
+                    <option value="2">Dưa hấu</option>
+                    <option value="3">Táo</option>
+
+                    <option value="4">Xoài</option>
+
+                    <option value="5">Cam</option>
+
+                    <option value="6">Chôm chôm</option>
+
+                    <option value="7">Măng cụt</option>
+                </select>
+        </tr>
+        <tr>
+            <td>Giá hoa quả là:</td>
+            <td id="giahoaqua"></td>
+            <td id="đơnvị"> VNĐ/kg</td>
+        </tr>
+    </table>
+    <script>
+        function tinh() {
+            let loaihoaqua = document.getElementById("loaihoaqua").value
+            switch (loaihoaqua) {
+
+                case "1":
+                    document.getElementById("giahoaqua").innerText = 20000
+                    break
+                case "2":
+                    document.getElementById("giahoaqua").innerText = 20000
+                    break
+                case "3":
+                    document.getElementById("giahoaqua").innerText = 30000
+                    break
+                case "4":
+                    document.getElementById("giahoaqua").innerText = 30000
+                    break
+                case "5":
+                    document.getElementById("giahoaqua").innerText = 40000
+                    break
+                case "6":
+                    document.getElementById("giahoaqua").innerText = 40000
+                    break
+                case "7":
+                    document.getElementById("giahoaqua").innerText = 50000
+                    break
+                default:
+                    break
+            }
+        }
+
+    </script>
+    <!-- Ổi: 20000 VNĐ/kg
+Dưa Hấu: 20000 VNĐ/kg
+Táo: 30000 VNĐ/kg
+Xoài: 30000 VNĐ/kg
+Cam: 40000 VNĐ/kg
+Chôm Chôm: 40000 VNĐ/kg
+Măng Cụt: 50000 VNĐ/kg -->
+
+</body>
+
+</html>
